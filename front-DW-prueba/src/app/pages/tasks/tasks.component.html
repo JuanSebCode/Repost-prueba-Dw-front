@@ -1,0 +1,17 @@
+<h2 class="content-block">Cliente</h2>
+
+<dx-form>
+ <dxi-item itemType="button">
+    <dxo-button-options text="Editar" width="25%" [onClick]="btnIngresarCliente" ></dxo-button-options>
+  </dxi-item> 
+</dx-form>
+
+<dx-data-grid class="dx-card wide-card" [dataSource]="dataSource.result"
+    [allowColumnReordering]="true">    
+    <dxi-column dataField="id"></dxi-column>
+    <dxi-column dataField="nombres"></dxi-column>
+    <dxi-column dataField="apellidos"></dxi-column>
+    <dxi-column dataField="edad"></dxi-column>    
+</dx-data-grid>
+
+
